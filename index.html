@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Consent &amp; Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=DM+Sans:wght@400;500&display=swap');
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #fafaf8;
+      --border: #d4d0c8;
+      --muted: #6b6560;
+      --accent: #2c5282;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin: 2rem 0 0.75rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-preview {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    .form-preview h3 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .form-field {
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 0;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .form-field span {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .consent-block {
+      background: #f5f4f0;
+      border-radius: 4px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
+    .sig-line {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .sig-line div {
+      flex: 1;
+    }
+
+    .sig-line .line {
+      border-bottom: 1px solid var(--ink);
+      height: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .sig-line label {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .keywords {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .keyword {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .keyword strong {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMS Consent &amp; Privacy Policy</h1>
+    <p class="subtitle">Personal Assistant SMS Service &mdash; Opt-In Documentation</p>
+
+    <h2>Overview</h2>
+    <p>This page documents the consent process used to enroll recipients into SMS communications from a personal AI assistant service. Consent is collected via a paper form, signed by the recipient prior to receiving any messages.</p>
+
+    <h2>Paper Opt-In Form</h2>
+    <p>The following form is provided to each recipient and must be signed before any SMS messages are sent to their phone number. A copy of each signed form is retained on file.</p>
+
+    <div class="form-preview">
+      <h3>SMS Communications Consent Form</h3>
+
+      <div class="form-field"><span>Recipient Name:</span> ___________________________</div>
+      <div class="form-field"><span>Phone Number:</span> (______) ______&ndash;__________</div>
+
+      <div class="consent-block">
+        By signing below, I consent to receive SMS and MMS messages from this personal assistant service at the phone number provided above. Messages may include notifications, reminders, informational responses, and replies to my queries. Message frequency varies. Message and data rates may apply.
+        <br><br>
+        I understand that my consent is not a condition of any purchase or service, and that I may revoke consent at any time by replying <strong>STOP</strong> to any message. I may reply <strong>HELP</strong> to any message for assistance.
+      </div>
+
+      <div class="sig-line">
+        <div>
+          <div class="line"></div>
+          <label>Signature</label>
+        </div>
+        <div>
+          <div class="line"></div>
+          <label>Date</label>
+        </div>
+      </div>
+    </div>
+
+    <h2>SMS Keywords</h2>
+    <p>The following standard keywords are supported on this service:</p>
+    <div class="keywords">
+      <div class="keyword">
+        <strong>STOP</strong>
+        You have been unsubscribed and will no longer receive messages from this service. Reply START to re-subscribe.
+      </div>
+      <div class="keyword">
+        <strong>HELP</strong>
+        This is a personal assistant SMS service. For support, contact the number owner directly. Reply STOP to unsubscribe. Msg &amp; data rates may apply.
+      </div>
+    </div>
+
+    <h2>Privacy Policy</h2>
+    <p>This service is operated by an individual for personal, non-commercial use. The following outlines how recipient information is handled:</p>
+    <ul>
+      <li><strong>Information collected:</strong> Phone number and name, as provided on the signed consent form.</li>
+      <li><strong>Use of information:</strong> Phone numbers are used solely for delivering SMS messages through this personal assistant service via Twilio.</li>
+      <li><strong>Data sharing:</strong> Recipient phone numbers and personal information are not sold, rented, or shared with any third parties, except as required by the messaging platform (Twilio) to deliver messages.</li>
+      <li><strong>Data retention:</strong> Recipient information is retained only for as long as the recipient remains opted in. Upon opting out, records are removed within 30 days.</li>
+      <li><strong>Security:</strong> Recipient data is stored securely and access is limited to the service operator.</li>
+    </ul>
+
+    <h2>Opt-In Record Keeping</h2>
+    <p>A physical copy of each signed consent form is retained on file for the duration of the recipient's enrollment. These records are available for review upon request by the recipient or by Twilio for compliance verification purposes.</p>
+
+    <footer>
+      <p>Last updated: May 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
