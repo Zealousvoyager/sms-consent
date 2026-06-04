@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMS Consent &amp; Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --steel:#15171a;
+    --panel:#1d2024;
+    --panel-2:#23272c;
+    --ink:#e9e7e1;
+    --muted:#8f8f88;
+    --line:#33373d;
+    --accent:#e85d28;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--steel);color:var(--ink);
+    font-family:'Archivo',sans-serif;font-size:16px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;padding-bottom:60px;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:0 28px}
+
+  /* ---------- Header ---------- */
+  header{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
+  header::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:2}
+  .grid-bg{
+    position:absolute;inset:0;z-index:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:52px 52px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 20% 30%,#000 0%,transparent 75%);
+    mask-image:radial-gradient(ellipse 90% 80% at 20% 30%,#000 0%,transparent 75%);
+  }
+  .head-inner{position:relative;z-index:1;padding:42px 0 50px}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:34px}
+  .brand svg{width:26px;height:26px;color:var(--accent)}
+  .brand .nm{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.04em}
+  .brand .nm span{color:var(--muted)}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--accent);font-weight:500;
+    display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent)}
+  h1{
+    font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;
+    font-size:clamp(2.2rem,6vw,3.4rem);line-height:.98;letter-spacing:.01em;max-width:16ch;
+  }
+
+  /* ---------- Sections ---------- */
+  section{padding-top:44px}
+  .sec-tag{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent);font-weight:500;
+    margin-bottom:12px;display:block;
+  }
+  h2{
+    font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;
+    font-size:1.5rem;letter-spacing:.01em;margin-bottom:14px;line-height:1.05;
+  }
+  p{margin-bottom:14px;color:var(--ink)}
+  p.muted{color:var(--muted)}
+
+  ul{list-style:none;margin:8px 0 14px}
+  ul li{position:relative;padding-left:26px;margin-bottom:12px;color:var(--muted)}
+  ul li::before{
+    content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;
+    background:var(--accent);transform:rotate(45deg);
+  }
+  ul li strong{color:var(--ink);font-weight:600}
+
+  /* ---------- Form preview ---------- */
+  .form-preview{
+    background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    padding:34px 32px;margin:22px 0 10px;
+  }
+  .form-preview h3{
+    font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;
+    font-size:1.15rem;letter-spacing:.05em;text-align:center;margin-bottom:26px;
+    padding-bottom:18px;border-bottom:1px solid var(--line);
+  }
+  .form-field{
+    font-family:'JetBrains Mono',monospace;font-size:.88rem;color:var(--muted);
+    padding:.6rem 0;margin-bottom:.5rem;letter-spacing:.02em;
+  }
+  .form-field span{color:var(--accent);text-transform:uppercase;font-size:.78rem;letter-spacing:.1em;font-weight:500}
+  .consent-block{
+    background:var(--steel);border:1px solid var(--line);
+    padding:1.3rem 1.4rem;margin:1.4rem 0;font-size:.9rem;line-height:1.7;color:var(--ink);
+  }
+  .consent-block strong{color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+  .sig-line{display:flex;gap:2rem;margin-top:1.6rem}
+  .sig-line div{flex:1}
+  .sig-line .line{border-bottom:1px solid var(--muted);height:2.2rem;margin-bottom:.4rem}
+  .sig-line label{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+
+  /* ---------- Keywords ---------- */
+  .keywords{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--line);margin:18px 0 4px}
+  @media(max-width:560px){.keywords{grid-template-columns:1fr}}
+  .keyword{background:var(--panel);padding:24px 24px;margin:1px;position:relative}
+  .keyword::before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--accent)}
+  .keyword strong{
+    display:block;font-family:'Anton',sans-serif;text-transform:uppercase;
+    font-size:1.4rem;letter-spacing:.03em;color:var(--accent);margin-bottom:10px;
+  }
+  .keyword p{font-size:.9rem;color:var(--muted);margin:0}
+
+  /* ---------- Footer ---------- */
+  footer{margin-top:54px;padding-top:24px;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  .foot .fb{display:flex;align-items:center;gap:10px}
+  .foot .fb svg{width:20px;height:20px;color:var(--accent)}
+  .foot .fb .nm{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.04em}
+  .foot .meta{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="grid-bg"></div>
+  <div class="wrap head-inner">
+    <div class="brand">
+      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="m 252.36706,126.13035 -206.679166,1.86197 v 152.06125 l 143.372036,-1.24131 0.62066,62.06582 -53.99726,-19.24042 -89.374776,23.58501 196.748636,60.8245 -0.62065,-180.61151 -141.51006,0.62065 -0.62067,-48.41135 105.51189,1.24134 z"/>
+        <path d="m 323.12209,126.75101 146.47533,0.62065 0.62067,150.19927 -145.23401,0.62068 -0.62066,104.89121 -52.75594,22.3437 -0.62066,-179.37021 146.47532,2.48263 1.24132,-49.03199 -146.47533,-3.72396 z"/>
+        <path d="m 354.7929,320.39635 h 45.2908 v 33.51553 l -45.9287,17.37845 z"/>
+      </svg>
+      <span class="nm">Sherrouse <span>Properties</span></span>
+    </div>
+    <p class="eyebrow">Opt-In Documentation</p>
+    <h1>SMS Consent &amp; Privacy Policy</h1>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <span class="sec-tag">01 / Overview</span>
+    <h2>Overview</h2>
+    <p class="muted">This page documents the consent process used to enroll recipients into SMS communications from a personal AI assistant service. Consent is collected via a paper form, signed by the recipient prior to receiving any messages.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">02 / Opt-In Form</span>
+    <h2>Paper Opt-In Form</h2>
+    <p class="muted">The following form is provided to each recipient and must be signed before any SMS messages are sent to their phone number. A copy of each signed form is retained on file.</p>
+
+    <div class="form-preview">
+      <h3>SMS Communications Consent Form</h3>
+
+      <div class="form-field"><span>Recipient Name:</span> &nbsp;___________________________</div>
+      <div class="form-field"><span>Phone Number:</span> &nbsp;(______) ______&ndash;__________</div>
+
+      <div class="consent-block">
+        By signing below, I consent to receive SMS and MMS messages from this personal assistant service at the phone number provided above. Messages may include notifications, reminders, informational responses, and replies to my queries. Message frequency varies. Message and data rates may apply.
+        <br><br>
+        I understand that my consent is not a condition of any purchase or service, and that I may revoke consent at any time by replying <strong>STOP</strong> to any message. I may reply <strong>HELP</strong> to any message for assistance.
+      </div>
+
+      <div class="sig-line">
+        <div><div class="line"></div><label>Signature</label></div>
+        <div><div class="line"></div><label>Date</label></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-tag">03 / Keywords</span>
+    <h2>SMS Keywords</h2>
+    <p class="muted">The following standard keywords are supported on this service:</p>
+    <div class="keywords">
+      <div class="keyword">
+        <strong>STOP</strong>
+        <p>You have been unsubscribed and will no longer receive messages from this service. Reply START to re-subscribe.</p>
+      </div>
+      <div class="keyword">
+        <strong>HELP</strong>
+        <p>This is a personal assistant SMS service. For support, contact the number owner directly. Reply STOP to unsubscribe. Msg &amp; data rates may apply.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-tag">04 / Privacy</span>
+    <h2>Privacy Policy</h2>
+    <p class="muted">This service is operated by an individual for personal, non-commercial use. The following outlines how recipient information is handled:</p>
+    <ul>
+      <li><strong>Information collected:</strong> Phone number and name, as provided on the signed consent form.</li>
+      <li><strong>Use of information:</strong> Phone numbers are used solely for delivering SMS messages through this personal assistant service via Twilio.</li>
+      <li><strong>Data sharing:</strong> Recipient phone numbers and personal information are not sold, rented, or shared with any third parties, except as required by the messaging platform (Twilio) to deliver messages.</li>
+      <li><strong>Data retention:</strong> Recipient information is retained only for as long as the recipient remains opted in. Upon opting out, records are removed within 30 days.</li>
+      <li><strong>Security:</strong> Recipient data is stored securely and access is limited to the service operator.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="sec-tag">05 / Records</span>
+    <h2>Opt-In Record Keeping</h2>
+    <p class="muted">A physical copy of each signed consent form is retained on file for the duration of the recipient's enrollment. These records are available for review upon request by the recipient or by Twilio for compliance verification purposes.</p>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <div class="fb">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path d="m 252.36706,126.13035 -206.679166,1.86197 v 152.06125 l 143.372036,-1.24131 0.62066,62.06582 -53.99726,-19.24042 -89.374776,23.58501 196.748636,60.8245 -0.62065,-180.61151 -141.51006,0.62065 -0.62067,-48.41135 105.51189,1.24134 z"/>
+          <path d="m 323.12209,126.75101 146.47533,0.62065 0.62067,150.19927 -145.23401,0.62068 -0.62066,104.89121 -52.75594,22.3437 -0.62066,-179.37021 146.47532,2.48263 1.24132,-49.03199 -146.47533,-3.72396 z"/>
+          <path d="m 354.7929,320.39635 h 45.2908 v 33.51553 l -45.9287,17.37845 z"/>
+        </svg>
+        <span class="nm">Sherrouse Properties</span>
+      </div>
+      <span class="meta">Last updated: June 2026</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
