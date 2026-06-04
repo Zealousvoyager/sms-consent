@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; Sherrouse Properties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     EDIT GUIDE (search "EDIT:")
+     - Effective date (header + footer)
+     - Contact email in section 09
+     - Analytics line in section 05 (delete if you use no analytics)
+     ============================================================ -->
+
+<style>
+  :root{
+    --steel:#15171a;--panel:#1d2024;--panel-2:#23272c;
+    --ink:#e9e7e1;--muted:#8f8f88;--line:#33373d;--accent:#e85d28;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--steel);color:var(--ink);
+    font-family:'Archivo',sans-serif;font-size:16px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;padding-bottom:60px;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:0 28px}
+
+  header{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
+  header::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:2}
+  .grid-bg{
+    position:absolute;inset:0;z-index:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:52px 52px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 20% 30%,#000 0%,transparent 75%);
+    mask-image:radial-gradient(ellipse 90% 80% at 20% 30%,#000 0%,transparent 75%);
+  }
+  .head-inner{position:relative;z-index:1;padding:42px 0 50px}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:34px}
+  .brand svg{width:26px;height:26px;color:var(--accent)}
+  .brand .nm{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.04em}
+  .brand .nm span{color:var(--muted)}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--accent);font-weight:500;
+    display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent)}
+  h1{
+    font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;
+    font-size:clamp(2.2rem,6vw,3.4rem);line-height:.98;letter-spacing:.01em;
+  }
+  .eff{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:16px}
+
+  section{padding-top:44px}
+  .sec-tag{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:12px;display:block;
+  }
+  h2{
+    font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;
+    font-size:1.5rem;letter-spacing:.01em;margin-bottom:14px;line-height:1.05;
+  }
+  p{margin-bottom:14px}
+  p.muted{color:var(--muted)}
+
+  ul{list-style:none;margin:8px 0 14px}
+  ul li{position:relative;padding-left:26px;margin-bottom:12px;color:var(--muted)}
+  ul li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--accent);transform:rotate(45deg)}
+  ul li strong{color:var(--ink);font-weight:600}
+
+  .contact-box{
+    background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    padding:24px 28px;margin-top:6px;
+  }
+  .contact-box .k{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:500}
+  .contact-box .v{font-family:'Anton',sans-serif;font-size:1.2rem;letter-spacing:.02em;margin-top:8px}
+  .contact-box a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);transition:border-color .25s}
+  .contact-box a:hover{border-color:var(--accent)}
+
+  footer{margin-top:54px;padding-top:24px;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  .foot .fb{display:flex;align-items:center;gap:10px}
+  .foot .fb svg{width:20px;height:20px;color:var(--accent)}
+  .foot .fb .nm{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.04em}
+  .foot .meta{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="grid-bg"></div>
+  <div class="wrap head-inner">
+    <div class="brand">
+      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="m 252.36706,126.13035 -206.679166,1.86197 v 152.06125 l 143.372036,-1.24131 0.62066,62.06582 -53.99726,-19.24042 -89.374776,23.58501 196.748636,60.8245 -0.62065,-180.61151 -141.51006,0.62065 -0.62067,-48.41135 105.51189,1.24134 z"/>
+        <path d="m 323.12209,126.75101 146.47533,0.62065 0.62067,150.19927 -145.23401,0.62068 -0.62066,104.89121 -52.75594,22.3437 -0.62066,-179.37021 146.47532,2.48263 1.24132,-49.03199 -146.47533,-3.72396 z"/>
+        <path d="m 354.7929,320.39635 h 45.2908 v 33.51553 l -45.9287,17.37845 z"/>
+      </svg>
+      <span class="nm">Sherrouse <span>Properties</span></span>
+    </div>
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <!-- EDIT: effective date -->
+    <p class="eff">Effective: June 2026</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <span class="sec-tag">01 / Overview</span>
+    <h2>Overview</h2>
+    <p class="muted">Sherrouse Properties respects your privacy. This policy explains what we collect through this website and how we handle it. We keep it simple and collect as little as possible.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">02 / What We Collect</span>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>What you send us.</strong> If you contact us by email or phone, we receive what you choose to share &mdash; your name, contact details, and message.</li>
+      <li><strong>Automatic data.</strong> Like most websites, our host may log basic technical data: IP address, browser type, pages viewed, and time of visit. This is standard server activity.</li>
+    </ul>
+    <p class="muted">This site has no account sign-up and no forms that collect personal data.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">03 / How We Use It</span>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>Respond to your questions and requests.</li>
+      <li>Provide information about our services.</li>
+      <li>Keep the site running and secure.</li>
+      <li>Meet legal obligations.</li>
+    </ul>
+    <p class="muted">We do not use your information for advertising, and we do not sell it.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">04 / Sharing</span>
+    <h2>Sharing &amp; Third Parties</h2>
+    <p class="muted">We don't sell, rent, or trade your information. We share it only with service providers that help run the site &mdash; such as our web host &mdash; or when required by law.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">05 / Cookies</span>
+    <h2>Cookies &amp; Analytics</h2>
+    <p class="muted">This site uses minimal cookies. <!-- EDIT: delete next sentence if you run no analytics -->If we use analytics, it's to understand general traffic, not to track individuals. You can block or delete cookies in your browser settings.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">06 / Retention &amp; Security</span>
+    <h2>Data Retention &amp; Security</h2>
+    <p class="muted">We keep information only as long as needed for the purpose it was collected, then remove it. We take reasonable steps to protect it. No method of transmission over the internet is fully secure, so we can't guarantee absolute security.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">07 / Your Choices</span>
+    <h2>Your Choices</h2>
+    <p class="muted">You can contact us to ask what information we hold, request corrections, or ask us to delete it. We'll respond within a reasonable time.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">08 / Children</span>
+    <h2>Children's Privacy</h2>
+    <p class="muted">This site is not directed at children under 13, and we don't knowingly collect their information. If you believe a child has provided us information, contact us and we'll remove it.</p>
+  </section>
+
+  <section>
+    <span class="sec-tag">09 / Changes</span>
+    <h2>Changes</h2>
+    <p class="muted">We may update this policy from time to time. Updates will be posted here with a new effective date.</p>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <div class="fb">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path d="m 252.36706,126.13035 -206.679166,1.86197 v 152.06125 l 143.372036,-1.24131 0.62066,62.06582 -53.99726,-19.24042 -89.374776,23.58501 196.748636,60.8245 -0.62065,-180.61151 -141.51006,0.62065 -0.62067,-48.41135 105.51189,1.24134 z"/>
+          <path d="m 323.12209,126.75101 146.47533,0.62065 0.62067,150.19927 -145.23401,0.62068 -0.62066,104.89121 -52.75594,22.3437 -0.62066,-179.37021 146.47532,2.48263 1.24132,-49.03199 -146.47533,-3.72396 z"/>
+          <path d="m 354.7929,320.39635 h 45.2908 v 33.51553 l -45.9287,17.37845 z"/>
+        </svg>
+        <span class="nm">Sherrouse Properties</span>
+      </div>
+      <!-- EDIT: effective date -->
+      <span class="meta">Effective June 2026 &middot; Middle Tennessee</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
